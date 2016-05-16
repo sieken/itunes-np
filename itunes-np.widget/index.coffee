@@ -1,4 +1,4 @@
-command: "osascript -e 'tell app \"iTunes\" to if playing then \"♫ \" artist of current track & \" - \" & name of current track & \" ♫\"'"
+command: "osascript -e 'if app \"iTunes\" is running then tell app \"iTunes\" to if player state is playing then \"♫ \" & artist of current track & \" - \" & name of current track & \" ♫\"'"
 
 refreshFrequency: 500
 
